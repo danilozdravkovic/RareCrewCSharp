@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpClient();
 builder.Services.AddTransient<EmployeeService>();
+builder.Services.AddTransient<ChartService>();
 
 var app = builder.Build();
 
